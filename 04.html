@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let s="&nbsp",
+        a="*",
+        i,
+        t,
+        str="",
+        strq="";
+    for (t=0; t<5; t++){
+        for (i=0; i<10; i++){
+            document.write(a);
+        }
+        document.write("<br>")
+    }
+    document.write("<br>");
+
+
+    for (t=0; t<5; t++){
+        document.write(str+=a);
+        document.write("<br>")
+    }
+
+    document.write("<br>");
+
+    for (t=0; t<8; t+=2){
+        for (i=0; i<8-t; i++){
+            document.write(s);
+        }
+        for (i=t+1; i>0; i--){
+            document.write(a);
+        }
+        document.write("<br>")
+
+    }
+    document.write("<br>");
+
+    //Ромб
+    for (t=0; t<8; t+=2){
+        for (i=0; i<8-t; i++){
+            document.write(s);
+        }
+        for (i=t+1; i>0; i--){
+            document.write(a);
+        }
+        document.write("<br>")
+    }
+    for (t=0; t<5; t+=2){
+        for (i=t+4; i>0; i-=1){
+            document.write(s);
+        }
+        for (i=0; i<5-t; i++){
+            document.write(a);
+        }
+
+        document.write("<br>")
+
+    }
+
+    document.write("<br>");
+
+
+
+
+
+
+</script>
+</body>
+</html>
